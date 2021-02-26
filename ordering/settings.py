@@ -22,6 +22,7 @@ class Shows(str, Enum):
     VIXEN = 'Vixen'
     BLACK_LIGHTNING = 'Black Lightning'
     BATWOMAN = 'Batwoman'
+    SUPERMANLOIS = 'Superman & Lois'
 
     def __str__(self):
         return self.value
@@ -36,6 +37,7 @@ SUPERGIRL_URL = 'List_of_Supergirl_episodes'
 VIXEN_URL = 'List_of_Vixen_episodes'
 BLACK_LIGHTNING_URL = 'List_of_Black_Lightning_episodes'
 BATWOMAN_URL = 'List_of_Batwoman_episodes'
+SUPERMANLOIS_URL = 'List_of_Superman_%26_Lois_episodes'
 
 FANDOM_ROOT = 'http://arrow.fandom.com/wiki/'
 WIKIPEDIA_ROOT = 'https://en.wikipedia.org/wiki/'
@@ -95,6 +97,12 @@ SHOWS = (
         'id': 'batwoman',
         'name': Shows.BATWOMAN,
         'url': BATWOMAN_URL,
+        'root': FANDOM_ROOT
+    },
+       {
+        'id': 'SupermanLois',
+        'name': Shows.SUPERMANLOIS,
+        'url':SUPERMANLOIS_URL,
         'root': FANDOM_ROOT
     },
 )
