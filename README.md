@@ -23,3 +23,4 @@ Data is also drawn from Wikipedia when necessary.
 * Constantine
 * Black Lightning
 * Batwoman
+* Superman & Lois
