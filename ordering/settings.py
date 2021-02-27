@@ -100,7 +100,7 @@ SHOWS = (
         'root': FANDOM_ROOT
     },
        {
-        'id': 'SupermanLois',
+        'id': 'supermanlois',
         'name': Shows.SUPERMANLOIS,
         'url':SUPERMANLOIS_URL,
         'root': FANDOM_ROOT
