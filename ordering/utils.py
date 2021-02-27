@@ -21,6 +21,7 @@ from .constants import (
     SUPERGIRL,
     VIXEN,
     WIKIPEDIA,
+    SUPERMANLOIS
 )
 
 TWELVE_HOURS = 43200
@@ -142,21 +143,23 @@ def _handle_air_time_error(episode_list):
     # handles when two episodes air on the same day
     seasons = ['', 'Midseason', 'Midseason', 'Midseason', 'Midseason', 'Midseason', 'Midseason',
                'Summer', 'Summer', 'Summer', 'Fall', 'Fall', 'Fall']
+               'Summer', 'Summer', 'Fall', 'Fall', 'Fall', 'Fall']
     air_orders = {'Fall 2016': [(LEGENDS_OF_TOMORROW, VIXEN)],
                   'Midseason 2017': [(FLASH, LEGENDS_OF_TOMORROW)],
                   'Fall 2017': [(FLASH, LEGENDS_OF_TOMORROW)],
-                  'Midseason 2018': [(FLASH, BLACK_LIGHTNING)],
-                  'Fall 2018': [(ARROW, LEGENDS_OF_TOMORROW),
-                                (FLASH, BLACK_LIGHTNING),
-                                (SUPERGIRL, BLACK_LIGHTNING)],
+def _handle_air_time_error(episode_list):
                   'Midseason 2019': [(ARROW, BLACK_LIGHTNING),
                                      (LEGENDS_OF_TOMORROW, ARROW)],
                   'Fall 2019': [(BATWOMAN, SUPERGIRL),
                                 (FLASH, ARROW)]}
+                                (FLASH, ARROW)],
+                  'Midseason 2020': [(BATWOMAN, SUPERGIRL),
+                                     (ARROW, LEGENDS_OF_TOMORROW),
+                                     (FLASH, LEGENDS_OF_TOMORROW)]}
 
     for i in range(len(episode_list)-1):
         curr_ep = episode_list[i]
-        next_ep = episode_list[i+1]
+
 
         if curr_ep['air_date'] != next_ep['air_date']:
             continue
