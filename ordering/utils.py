@@ -21,7 +21,7 @@ from .constants import (
     SUPERGIRL,
     VIXEN,
     WIKIPEDIA,
-    SUPERMANLOIS
+    SUPERMANLOIS,
 )
 
 TWELVE_HOURS = 43200
